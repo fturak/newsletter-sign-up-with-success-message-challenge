@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <div id="sign-up-content">
+    <div class="content-container" id="sign-up-container">
+      <h1 id = stay-updated-title>Stay updated!</h1>
+      <p id="stay-updated-desc">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div id="benefit-container">
+        <div class="benefit-box">
+          <img class ="tick-img"src="./assets/images/icon-success.svg">
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="benefit-box">
+          <img class ="tick-img"src="./assets/images/icon-success.svg">
+          <p>    Measuring to ensure updates are a success</p>
+        </div>
+        <div class="benefit-box">
+          <img class ="tick-img"src="./assets/images/icon-success.svg">
+          <p>And much more!</p>
+        </div>
+      </div>
+        <div id="email-container">
+          <div id="email-prompt-container">
+            <p id="email-address-prompt">Email address</p>
+            <p id="email-invalid-prompt">Valid email required</p>
+          </div>
+          <input id="email-input" class ="input-box" type="email" value="email@company.com" onclick="emptyEmailInput()"  onkeyup="validateEmail()">
+          <button id="email-submit-button" class="input-box" type= "button" onmouseup="submitEmail()" onmouseover="emailSubmitHover(this)">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+    <div class="content-container" id ="illustration-container">
+      <img id="illustration-img" src="assets/images/illustration-sign-up-desktop.svg">
+    </div>
+  </div>
+  <div id="thank-you-card">
+    <img id="thank-you-img" src="./assets/images/icon-success.svg">
+    <h1 id ="thank-you-title">Thanks for subscribing!</h1>
+    <p id="thank-you-desc">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+    <button id="dismiss-button" type="button" onclick="dismissThankYou()">Dismiss message</button>
+  
+    <!-- Success message end -->
+  </div>
+  
+  <div class="attribution">
+    Coded by <a href="https://www.linkedin.com/in/firasturak/">Firas Turak</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
