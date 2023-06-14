@@ -62,6 +62,8 @@ function validateEmail () {
 
     //remove thank you message
     function dismissThankYou () {
+        emailInput.value = "email@company.com";
+        emailInput.style.color = "hsl(231, 7%, 60%)";
         thankYouCard.style.display = "none";
         signUpCard.style.display = "flex";
     }
