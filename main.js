@@ -64,6 +64,7 @@ function validateEmail () {
     function dismissThankYou () {
         emailInput.value = "email@company.com";
         emailInput.style.color = "hsl(231, 7%, 60%)";
+        canSubmitEmail = false;
         thankYouCard.style.display = "none";
         signUpCard.style.display = "flex";
     }
