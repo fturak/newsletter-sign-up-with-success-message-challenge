@@ -21,10 +21,7 @@ function emptyEmailInput (){
 function validateEmail () {
     //Display error message on invalid inputs and assign cansubmit boolean
     if(!emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-        emailInput.style.backgroundColor = "hsl(4, 100%, 85%)";
-        emailInput.style.border = "2px solid red";
-        emailError.style.visibility = "visible";
-        canSubmitEmail = false;
+        errorEmailInputColors();
     } 
     //Valid email input
     else {
@@ -32,11 +29,11 @@ function validateEmail () {
         canSubmitEmail = true;
         normalEmailInputColors();
     } 
-    /*Empty email input resets visuals not part of challenge but personal preference
+    //Empty email input resets visuals not part of challenge but personal preference
     if(emailInput.value == "") {
         emailError.style.visibility = "hidden";
         normalEmailInputColors();
-    }*/
+    }
 }
 
     function normalEmailInputColors () {
@@ -44,15 +41,23 @@ function validateEmail () {
         emailInput.style.border = "2px solid black";
     }
 
+    function errorEmailInputColors () {
+        emailInput.style.backgroundColor = "hsl(4, 100%, 85%)";
+        emailInput.style.border = "2px solid red";
+        emailError.style.visibility = "visible";
+        canSubmitEmail = false;
+    }
+
     function submitEmail () {
-        if(canSubmitEmail) {
-            
+        if(canSubmitEmail) {       
             thankYouDesc.innerHTML ="A confirmation email has been sent to " + emailInput.value + ". Please open it and click the button inside to confirm your subscription."
 
             thankYouCard.style.display = "block";
             signUpCard.style.display = "none";
         }
-        console.log("click");
+        else {
+            errorEmailInputColors();
+        }
     }
 
     //remove thank you message
