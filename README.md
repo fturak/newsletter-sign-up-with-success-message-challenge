@@ -6,6 +6,7 @@ This is my [Firas Turak](https://www.linkedin.com/in/firasturak/) solution to th
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot (My solution)](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -27,10 +28,12 @@ Your users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
+### Screenshot (My solution)
+![Solution](./solution.JPG)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
