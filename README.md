@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Click 'View Deployment']([https://github.com/fturak/newsletter-sign-up-with-success-message-challenge/deployments/activity_log?environment=github-pages])
 
 ## My process
 
