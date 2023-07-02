@@ -8,7 +8,6 @@
 
 body {
     background-color: hsl(235, 18%, 26%);
-    padding-top: 200px;
 }
 
 button {
@@ -26,7 +25,7 @@ button:hover {
     border-radius: 25px;
     display: flex;
     padding: 1.5%;
-    margin: 0 auto;
+    margin: 35px auto 35px auto;
 }
 
 .content-container {
@@ -153,15 +152,13 @@ button:hover {
 
 @media screen and (max-width: 920px) {
 
-    body {
-        padding-top: 0px;
-    }
     #sign-up-content{
         flex-direction: column;
         padding: 0%;
         height: 100%;
         width: 100%;
         border-radius: 0px;
+        margin: 0;
     }
 
     #sign-up-container {
@@ -233,6 +230,5 @@ button:hover {
 .attribution {
 font-size: 11px;
 bottom: 0%;
-position: fixed;
 color: hsl(293, 92%, 45%);
 }
